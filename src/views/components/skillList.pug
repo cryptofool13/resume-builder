@@ -1,14 +1,14 @@
-h3 Tech Skills:
-ul 
+h3 Tech Skills
+ul.top 
     each skill in skillList
         li #{skill.skill}: #{skill.exp}
-h3 Frameworks:
-ul
+h3 Frameworks
+ul.top
     each fw in frameworks
         li #{fw.name}
             p #{fw.exp}
             if fw.projects
-                ul
+                ul.lower
                     each project in fw.projects
                         li
                             a(href=`${project.url}` target='_blank') #{project.name}

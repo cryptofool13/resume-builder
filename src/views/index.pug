@@ -2,10 +2,11 @@ html
     head
         title= name
         style
-            include ../styles/style.css
+            include ../styles/main.css
     body
-        include components/header.pug
-        include components/bio.pug
-        include components/workExp.pug
-        include components/skillList.pug
-        include components/reference.pug
+        div.wrapper
+            include components/header.pug
+            include components/bio.pug
+            include components/workExp.pug
+            include components/skillList.pug
+            include components/reference.pug
